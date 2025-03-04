@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
   
-    let items = [];
+    let items:any = [];
   
     onMount(async () => {
       const res = await fetch('/api/items');
