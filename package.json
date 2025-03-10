@@ -6,9 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "node start",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",    
+    "build": "nest build && mkdir -p dist/functions && mv dist/main.js dist/functions/main.js",
+    "start": "node dist/functions/main.js",
     "serve": "netlify dev",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
